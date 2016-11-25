@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block head %}
+{{ super() }}
+{% endblock %}
+
+{% block body %}
+<main id="app">
+    <p>Loading...</p>
+</main>
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+<script src="http://localhost:3030/public/bundle.js"></script>
+{% endblock %}

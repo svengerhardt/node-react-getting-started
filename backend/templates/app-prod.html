@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block head %}
+{{ super() }}
+{% endblock %}
+
+{% block body %}
+<main id="app">
+    <p>Loading...</p>
+</main>
+{% endblock %}
+
+{% block styles %}
+{{ super() }}
+
+<link href="/public/bundle.css?{{ hashes.bundleCss }}" rel="stylesheet"/>
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+
+<script src="/public/vendors.js?{{ hashes.vendorsJs }}"></script>
+<script src="/public/bundle.js?{{ hashes.bundleJs }}"></script>
+{% endblock %}
